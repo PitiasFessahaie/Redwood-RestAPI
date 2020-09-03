@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="2565" started-at="2020-09-03T15:57:19 EDT" finished-at="2020-09-03T15:57:21 EDT">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="2565" started-at="2020-09-03T15:57:19 EDT" finished-at="2020-09-03T15:57:21 EDT">
+      <class name="apiScript.RestAPI">
+        <test-method status="PASS" signature="extractAndLoginTest()[pri:0, instance:apiScript.RestAPI@2758fe70]" name="extractAndLoginTest" duration-ms="1831" started-at="2020-09-03T15:57:19 EDT" finished-at="2020-09-03T15:57:21 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extractAndLoginTest -->
+        <test-method status="PASS" signature="getContentType()[pri:0, instance:apiScript.RestAPI@2758fe70]" name="getContentType" duration-ms="137" started-at="2020-09-03T15:57:21 EDT" finished-at="2020-09-03T15:57:21 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getContentType -->
+        <test-method status="PASS" signature="getEmmaText()[pri:0, instance:apiScript.RestAPI@2758fe70]" name="getEmmaText" duration-ms="2" started-at="2020-09-03T15:57:21 EDT" finished-at="2020-09-03T15:57:21 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getEmmaText -->
+        <test-method status="PASS" signature="getHeader()[pri:0, instance:apiScript.RestAPI@2758fe70]" name="getHeader" duration-ms="120" started-at="2020-09-03T15:57:21 EDT" finished-at="2020-09-03T15:57:21 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getHeader -->
+        <test-method status="PASS" signature="getThirdData()[pri:0, instance:apiScript.RestAPI@2758fe70]" name="getThirdData" duration-ms="122" started-at="2020-09-03T15:57:21 EDT" finished-at="2020-09-03T15:57:21 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getThirdData -->
+        <test-method status="PASS" signature="postData()[pri:0, instance:apiScript.RestAPI@2758fe70]" name="postData" duration-ms="325" started-at="2020-09-03T15:57:21 EDT" finished-at="2020-09-03T15:57:21 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postData -->
+      </class> <!-- apiScript.RestAPI -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
