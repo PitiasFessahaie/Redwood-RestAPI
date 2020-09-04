@@ -17,15 +17,14 @@ public class RestAPI {
 	String User = BaseURL + "users";
 	String Register = BaseURL + "users/register";
 	String Login = BaseURL + "users/login";
-	Library lib;
+	LibraryAPI lib;
 	String data3;
 	String text;
 
-
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void getHeader() {
 		// Ctrl + Space
-		lib = new Library();
+		lib = new LibraryAPI();
 
 		List<Header> header = lib.getHeader(User, "data[2].email", "emma.wong@reqres.in", 200,
 				"application/json; charset=utf-8");
@@ -39,10 +38,9 @@ public class RestAPI {
 
 	}
 
-	@Test(enabled = true)
+	@Test(enabled = false)
 
 	public void getContentType() {
-		
 
 		String data = given().when().get(User).then().assertThat().statusCode(200)
 				.body("data[2].email", equalTo("emma.wong@reqres.in")).body("data[2].avatar", notNullValue())
@@ -52,7 +50,7 @@ public class RestAPI {
 
 	}
 
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void getThirdData() {
 		// Get the data and validate the email
 
@@ -63,12 +61,10 @@ public class RestAPI {
 			System.out.println(e.getMessage());
 		}
 
-
-
 		System.out.println(data3);
 	}
 
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void getEmmaText() {
 		try {
 			text = lib.getString(User, 200, "data.first_name", "Emma", "ad.text");
@@ -79,13 +75,11 @@ public class RestAPI {
 			System.out.println(e.getMessage());
 		}
 
-
-
 		System.out.println("Emma Text: " + text);
 
 	}
 
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void postData() {
 
 		String body = "{'name':'me','job':'qa'}"; // Data
@@ -94,8 +88,6 @@ public class RestAPI {
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}
-		
-
 
 	}
 
@@ -113,14 +105,15 @@ public class RestAPI {
 
 		String LoginBody = "{'email':'" + email + "','password':'bond'}"; // Caution ???
 		String registerBody = "{'email':'" + email + "'}";
+		
+		System.out.println(LoginBody);
+		System.out.println(registerBody);
 
 		given().body(registerBody).when().post(Register).then().assertThat().statusCode(201);
 
 		given().body(LoginBody).when().post(Login).then().assertThat().statusCode(201);
 
-		
 		// Refactoring Code Next ???
-	
 
 	}
 

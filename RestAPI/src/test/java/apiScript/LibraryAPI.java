@@ -8,7 +8,7 @@ import java.util.List;
 
 import com.jayway.restassured.response.Header;
 
-public class Library {
+public class LibraryAPI {
 
 	public List<Header> getHeader(String url, String body, String email, int statue, String content) {
 
