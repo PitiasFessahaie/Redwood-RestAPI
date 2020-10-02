@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<setup:Configuration
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:setup="http://www.eclipse.org/oomph/setup/1.0"
+    label="Myhjhfhc uyg">
+  <installation
+      name="myhjhfhc.uyg.installation"
+      label="Myhjhfhc uyg Installation">
+    <productVersion
+        href="index:/org.eclipse.setup#//@productCatalogs[name='self']/@products[name='empty.product']/@versions[name='version']"/>
+    <description>The Myhjhfhc uyg installation provides cool stuff.</description>
+  </installation>
+  <workspace
+      name="myhjhfhc.uyg.workspace"
+      label="Myhjhfhc uyg Workspace">
+    <description>The Myhjhfhc uyg workspace provides cool stuff.</description>
+  </workspace>
+  <description>The Myhjhfhc uyg configuration provides cool stuff.</description>
+</setup:Configuration>

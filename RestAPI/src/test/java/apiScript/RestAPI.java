@@ -1,5 +1,4 @@
 package apiScript;
-
 import static com.jayway.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.notNullValue;
@@ -21,7 +20,7 @@ public class RestAPI {
 	String data3;
 	String text;
 
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void getHeader() {
 		// Ctrl + Space
 		lib = new LibraryAPI();

@@ -5,7 +5,7 @@
     <classes>
       <class name="apiScript.RestAPI">
         <methods>
-          <include name="postData"/>
+          <include name="extractAndLoginTest"/>
         </methods>
       </class> <!-- apiScript.RestAPI -->
     </classes>
